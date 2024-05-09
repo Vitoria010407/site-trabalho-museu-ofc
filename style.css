@@ -4,17 +4,17 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
   }
-<!--cor de fundo da linha do tempo-->
+
   body{
     background: #2e364a
   }
-<!--linha do tempo-->
+
   .timeline{
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
   }
-<!--containers-->
+
   .container{
     padding: 10px 50px;
     position: relative;
@@ -22,7 +22,7 @@
     animation: movedown 1s linear fowards;
     opacity: 1;
   }
- <!--linha da linha do tempo-->
+
   @keyframes movedown{
     0%{
       opacity: 0;
@@ -35,7 +35,7 @@
     }
   }
 
-  <!--containers aparecendo da linha do tempo-->
+ 
   .container:nth-child(1){
     animation-delay: 0<!--linha do tempo-->s;
   }
@@ -51,7 +51,7 @@
   .container:nth-child(5){
     animation-delay: 4s;
   }
-  <!--textos dos containers-->
+ 
   .text-box{
     padding: 20px 30px;
     background: #fff;
@@ -65,7 +65,7 @@
   .right-container{
     left: 50%;
   }
-<!--imagem do container-->
+
   .container img{
     position: absolute;
     width: 60px;
@@ -74,11 +74,11 @@
     top: -50px;
     z-index: 10;
   }
-<!--imagem do container direito-->
+
   .right-container img{
     left:20px;
   }
-<!--linha do tempo-->
+
   .timeline::after{
     content: '';
     position: absolute;
@@ -91,7 +91,7 @@
     z-index: -1;
     animation: moveline 6s linear forwards;
   }
-<!--linha do tempo-->
+
   @keyframes moveline{
     0%{
       height: 0;
@@ -109,7 +109,7 @@
     margin-bottom:15px;
   }
 
-<!-- containers esquerdos-->
+
   .left-container-arrow{
     height: 0;
     width: 0;
@@ -121,7 +121,7 @@
     border-left: 15px solid #fff;
     right: -15px;
   }
-<!--containers direitos-->
+
   .right-container-arrow{
     height: 0;
     width: 0;
